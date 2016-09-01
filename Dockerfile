@@ -8,7 +8,8 @@ ENV TERM=xterm-256color
 RUN apt-get update && \
     apt-get install -qy \
     -o APT::Install-Recommend=false -o APT::Install-Suggests=false \
-    python python-virtualenv libpython2.7 postgresql python-psycopg2 libpq-dev
+    python python-virtualenv libpython2.7 postgresql python-psycopg2 \ 
+    libpq-dev libevent-dev libjpeg-dev libfreetype6-dev zlib1g-dev
 
 # Create virtual environment
 # Upgrade PIP in virtual environment to latest version
